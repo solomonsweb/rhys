@@ -3,104 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Games Profile</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <title>My Games</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
+            background: linear-gradient(45deg, orange, white);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background: linear-gradient(135deg, orange, white);
-            animation: backgroundAnimation 10s infinite alternate;
+            margin: 0;
             font-family: 'Poppins', sans-serif;
         }
-
-        @keyframes backgroundAnimation {
-            0% { background: linear-gradient(135deg, orange, white); }
-            100% { background: linear-gradient(135deg, white, orange); }
-        }
-
-        h1 {
-            font-size: 2.5em;
-            color: #333;
-            margin: 20px 0;
-            animation: fadeIn 2s;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
         .profile-pic {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            background-image: url('/rhys.png');
+            background-size: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             animation: spin 10s linear infinite;
         }
-
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-
+        h1 {
+            font-weight: bold;
+            margin: 20px 0;
+        }
         .iframe-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px 0;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-
         iframe {
-            width: 400px;
-            height: 300px;
+            margin: 10px;
             border: none;
-            margin: 10px 0;
-            transition: transform 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
-
-        iframe:hover {
-            transform: scale(1.05);
-        }
-
         .logos {
-            display: flex;
-            margin: 20px 0;
+            margin-top: 20px;
         }
-
         .logos img {
-            width: 40px;
-            height: 40px;
+            width: 30px;
             margin: 0 10px;
             cursor: pointer;
             transition: transform 0.3s;
         }
-
         .logos img:hover {
             transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-    <img src="/rhys.png" alt="Profile Picture" class="profile-pic">
+    <div class="profile-pic"></div>
     <h1>My Games</h1>
-    
     <div class="iframe-container">
-        <iframe src="https://scratch.mit.edu/projects/1134188475/" title="Scratch Project 1"></iframe>
-        <iframe src="https://scratch.mit.edu/projects/1114614057/" title="Scratch Project 2"></iframe>
-        <iframe src="https://scratch.mit.edu/projects/1130314298/" title="Scratch Project 3"></iframe>
-        <iframe src="https://scratch.mit.edu/projects/1121977167/" title="Scratch Project 4"></iframe>
-        <iframe src="https://scratch.mit.edu/projects/1107029157/" title="Scratch Project 5"></iframe>
+        <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1134188475/?autostart=true" allowfullscreen></iframe>
+        <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1114614057/?autostart=true" allowfullscreen></iframe>
+        <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1130314298/?autostart=true" allowfullscreen></iframe>
+        <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1121977167/?autostart=true" allowfullscreen></iframe>
+        <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1107029157/?autostart=true" allowfullscreen></iframe>
     </div>
-
     <div class="logos">
         <a href="https://scratch.mit.edu" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Scratch_Logo.svg/2048px-Scratch_Logo.svg.png" alt="Scratch Logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Scratch_logo.svg/1200px-Scratch_logo.svg.png" alt="Scratch Logo">
         </a>
         <a href="https://github.com" target="_blank">
             <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
